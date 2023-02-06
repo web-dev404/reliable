@@ -1,0 +1,14 @@
+body span {
+  color: red;
+}
+@media (max-width: 850px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+.hello {
+  width: 500px;
+  height: 500px;
+  background: url("@img/1.jpg") 0 0 no-repeat;
+}
