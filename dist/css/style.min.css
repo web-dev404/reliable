@@ -3097,6 +3097,7 @@ button.swiper-pagination-bullet {
   height: 80px;
   border-radius: 8px;
   background: #cdd0d9;
+  cursor: pointer;
 }
 .payment__card-num {
   padding-top: 32px;
@@ -3253,10 +3254,14 @@ button.swiper-pagination-bullet {
   font-size: 12px;
   color: #f6f6f6;
   line-height: 15px;
+  cursor: pointer;
 }
 .payment .checkbox__link {
   color: #ddbb64;
   font-size: 12px;
+}
+.payment .checkbox__link:hover {
+  text-decoration: underline;
 }
 .payment__button {
   margin: 0 auto;
