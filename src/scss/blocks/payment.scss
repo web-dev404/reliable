@@ -1,0 +1,398 @@
+.bg {
+  background-image: url('../../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+}
+
+.step {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid $gold;
+  padding-top: 60px;
+  padding-bottom: 24px;
+  margin-bottom: 58px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    span {
+      color: #f6f6f6;
+      font-weight: 400;
+    }
+  }
+
+  &__item-line-one,
+  &__item-line-two,
+  &__item-line-three {
+    position: relative;
+  }
+
+  &__item-line-one::after,
+  &__item-line-two::after,
+  &__item-line-three::after {
+    position: absolute;
+    content: '';
+    background-image: url('..//../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 12px;
+    top: 6px;
+  }
+
+  &__item-line-one::after {
+    right: -96px;
+  }
+  &__item-line-two::after,
+  &__item-line-three::after {
+    right: -32px;
+  }
+
+  &__item-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $gray2;
+    margin-right: 16px;
+    color: #42403d;
+    font-weight: 500;
+  }
+
+  &__item-box--active {
+    background: $gold;
+    color: #fff;
+  }
+}
+
+.payment {
+  margin: 0 auto;
+  max-width: 555px;
+
+  &__title {
+    color: #f6f6f6;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    font-size: 32px;
+    font-weight: 500;
+    color: $gold;
+    margin-bottom: 34px;
+    position: relative;
+  }
+  &__price::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../img/symbol.svg');
+    width: 19px;
+    height: 24px;
+    top: 5px;
+    left: 95px;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__card {
+    width: 120px;
+    height: 80px;
+    background: linear-gradient(320.6deg, #3fb82f 77.75%, #55c935 96.49%);
+    border-radius: 8px;
+    margin-right: 27px;
+    position: relative;
+    padding: 8px;
+  }
+
+  &__card::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../img/icon-card.svg');
+    width: 18px;
+    height: 18px;
+    top: 8px;
+    left: 8px;
+  }
+  &__card::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../img/icon-debit.svg');
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    right: 8px;
+  }
+
+  &__card-new {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    background: $gray2;
+  }
+
+  &__card-num {
+    padding-top: 32px;
+  }
+
+  &__card-number {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  &__card-number,
+  &__card-date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__card-added {
+    width: 140px;
+    height: 100px;
+    border: 1px solid $gold;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  &__card-new {
+    text-align: center;
+    padding-top: 15px;
+
+    p {
+      font-size: 12px;
+      color: #42403d;
+      font-weight: 400;
+    }
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__front {
+    width: 400px;
+    height: 250px;
+    background: #f6f6f6;
+    box-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25), -7px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 42px 20px 17px 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__banks {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__label {
+    color: #42403d;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__label-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      margin-top: 10px;
+    }
+  }
+
+  &__input {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &__input-number {
+    width: 100%;
+    height: 30px;
+    border: 1px solid $gray2;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 23px;
+  }
+
+  &__input-date {
+    width: 41px;
+    height: 23px;
+    border-radius: 4px;
+    border: 1px solid $gray2;
+    padding: 3px;
+    text-align: center;
+  }
+
+  &__back {
+    width: 400px;
+    height: 250px;
+    background: $gray2;
+    border-radius: 8px;
+    padding-top: 30px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 0;
+  }
+
+  &__line {
+    width: 400px;
+    height: 50px;
+    background: #72706e;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    max-width: 95px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: -140px;
+  }
+
+  &__pass {
+    span {
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
+
+  &__input-pass {
+    width: 60px;
+    height: 40px;
+    background: #d9d9d9;
+    border: 1px solid $gray2;
+    padding: 10px 13px;
+    color: #42403d;
+    margin: 12px 0;
+  }
+
+  &__text {
+    color: #42403d;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  &__checkbox {
+    margin-bottom: 30px;
+  }
+
+  .checkbox {
+    &__input {
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      opacity: 0;
+      appearance: none;
+    }
+
+    &__fake {
+      position: relative;
+      margin-right: 15px;
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      background: $gold;
+      cursor: pointer;
+    }
+
+    &__text {
+      font-size: 12px;
+      color: #f6f6f6;
+      line-height: 15px;
+    }
+
+    &__link {
+      color: $gold;
+      font-size: 12px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: block;
+    width: 392px;
+    height: 64px;
+    background: $gold;
+    color: #42403d;
+    font-weight: 500;
+    // background: url('1653084064_2-celes-club-p-zerkalnoe-zoloto-fon-krasivie-2.jpg');
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
+    position: relative;
+  }
+  &__button::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../img/symbol2.svg');
+    width: 10px;
+    height: 13px;
+    top: 24px;
+    right: 120px;
+  }
+
+  .checkbox__input:checked + .checkbox__fake {
+    background-color: $gold;
+  }
+
+  .checkbox__input:checked + .checkbox__fake::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../../img/check.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &__support {
+    margin: 25px auto;
+    background-image: url('../../img/support.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 87px;
+  }
+}
