@@ -10,6 +10,8 @@
 /build
 /dist
 
+/gulp/version.json
+
 # misc
 .DS_Store
 .env.local
