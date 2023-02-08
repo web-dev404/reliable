@@ -1,8 +1,10 @@
 body {
   overflow-x: hidden;
   position: relative;
-  color: $white;
-  background: $black;
+  // color: $white;
+  // background: $black;
+  background: #42403d;
+  // background-image: url('/src/img/bg-vol.jpg');
 
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -24,8 +26,8 @@ button {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 1440px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 35px;
   margin: 0 auto;
 }
