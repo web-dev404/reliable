@@ -667,6 +667,11 @@ h6 {
   font-weight: 400;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -2964,12 +2969,22 @@ button.swiper-pagination-bullet {
   color: #858585;
 }
 
-.bg {
+.background {
   background-image: url("../../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -10;
+}
+
+.callback {
+  position: relative;
+}
+
+.callback-btn {
+  position: absolute;
+  right: 36px;
+  top: 680px;
 }
 
 .step {
@@ -3308,4 +3323,206 @@ button.swiper-pagination-bullet {
   background-position: center;
   width: 450px;
   height: 87px;
+}
+
+.background {
+  background-image: url("../../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.background .step {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #fff;
+}
+
+.callback {
+  position: relative;
+}
+
+.callback-order {
+  position: absolute;
+  right: 36px;
+  top: 780px;
+}
+
+.order {
+  max-width: 1110px;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid #ddbb64;
+}
+.order__done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.order__done img {
+  margin-right: 30px;
+}
+.order .btn {
+  position: absolute;
+  right: 200px;
+}
+.order .button-catalog {
+  padding: 23px 45px 23px 91px;
+  background: #ddbb64;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  border-radius: 8px;
+  color: #42403d;
+  position: relative;
+}
+.order .button-catalog::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/arrow-left.svg");
+  width: 12px;
+  height: 22px;
+  top: 21px;
+  left: 39px;
+}
+.order__text {
+  max-width: 884px;
+  margin: 60px auto 0;
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.order__text-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #ddbb64;
+  text-shadow: 7px 7px 4px #000000;
+}
+.order__line-up {
+  margin: 30px auto;
+  position: relative;
+  max-width: 260px;
+}
+.order__line-down {
+  margin: 42px auto;
+  position: relative;
+  max-width: 770px;
+}
+.order__line-up::after, .order__line-up::before {
+  position: absolute;
+  content: "";
+  width: 206px;
+  height: 1px;
+  top: 12px;
+}
+.order__line-up::after {
+  background-image: url("../../img/line/sm-line.png");
+  transform: rotate(180deg);
+  right: -102px;
+}
+.order__line-up::before {
+  background-image: url("../../img/line/sm-line.png");
+  left: -102px;
+}
+.order__line-down::after, .order__line-down::before {
+  position: absolute;
+  content: "";
+  width: 360px;
+  height: 1px;
+  top: 12px;
+}
+.order__line-down::after {
+  background-image: url("../../img/line/big-line.png");
+  transform: rotate(180deg);
+  right: 0;
+}
+.order__line-down::before {
+  background-image: url("../../img/line/big-line.png");
+  left: 0;
+}
+.order__text-desc, .order__text-description {
+  color: #f6f6f6;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 7px 7px 4px #000000;
+}
+
+.details {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.details__title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.details__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.details__item img {
+  margin-right: 15px;
+}
+.details__item-title, .details__item-color, .details__item-size {
+  font-size: 16px;
+  color: #f6f6f6;
+}
+.details__item-color, .details__item-size {
+  font-weight: 500;
+}
+.details__item-color {
+  margin: 20px 0;
+}
+.details__item-sizes {
+  display: flex;
+  align-items: center;
+}
+.details__item-discount {
+  font-size: 12px;
+  color: #fff;
+  padding: 4px 6px;
+  background: #ff7a5b;
+  border-radius: 4px;
+  margin-left: 32px;
+}
+.details__qty {
+  display: flex;
+  align-items: center;
+}
+.details__qty-price {
+  display: flex;
+  margin-right: 56px;
+  height: 18px;
+}
+.details__qty-price--new {
+  margin-right: 18px;
+  color: #ddbb64;
+  font-weight: 500;
+}
+.details__qty-price--old {
+  color: #cdd0d9;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.details__counter {
+  display: flex;
+  align-items: center;
+  margin-right: 54px;
+}
+.details__counter-current {
+  color: #f6f6f6;
+  font-weight: 500;
+  margin: 0 16px;
+}
+.details__counter-control {
+  cursor: pointer;
 }

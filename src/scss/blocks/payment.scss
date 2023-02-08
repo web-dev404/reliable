@@ -1,9 +1,19 @@
-.bg {
+.background {
   background-image: url('../../img/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -10;
+}
+
+.callback {
+  position: relative;
+}
+
+.callback-btn {
+  position: absolute;
+  right: 36px;
+  top: 680px;
 }
 
 .step {
