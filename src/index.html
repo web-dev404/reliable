@@ -2,6 +2,7 @@
 "title": "Оформление заказа"
 })
 <main>
+	@@include('html/name.html', {})
 	@@include('html/steps.html', {
 	"number": '2'
 	})
@@ -26,7 +27,7 @@
 							<input type="text" class='field__input' placeholder='Email' name='Email'>
 						</label>
 					</div>
-					<div class="field">
+					<div class="field field__field_agree">
 						<label class='field__check field__check_mailing'>
 							<input type="checkbox" class='field__fake' name='mailing' checked>
 							<div class="field__checkbox field__checkbox_mailing"></div>
@@ -103,7 +104,7 @@
 						<textarea type="text" class='field__area' name='comment'></textarea>
 					</div>
 				</div>
-				<h2 class='data__title'>Выберите способ оплаты</h2>
+				<h3 class='data__title'>Выберите способ оплаты</h3>
 				<div class="data__row data__row_flex">
 					<div class="field field-item">
 						<label class='field__check'>
@@ -133,7 +134,7 @@
 						</label>
 					</div>
 				</div>
-				<h2 class='data__title'>Оповещение о приеме заказа</h2>
+				<h4 class='data__title'>Оповещение о приеме заказа</h4>
 				<div class="data__row data__row_flex">
 					<div class="field">
 						<label class='field__check'>
@@ -151,3 +152,4 @@
 		</div>
 	</section>
 </main>
+@@include('html/footer.html', {})

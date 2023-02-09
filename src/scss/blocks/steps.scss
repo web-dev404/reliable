@@ -1,5 +1,9 @@
 .steps {
 	margin-bottom: 40px;
+	&__arrow {
+		width: 24px;
+		height: 24px;
+	}
 	&__list {
 		display: flex;
 		justify-content: space-around;
@@ -8,8 +12,13 @@
 		font-size: 16px;
 		display: flex;
 		align-items: center;
-		&:last-child img {
-			display: none;
+		&:last-child {
+			.steps__text {
+				margin-right: 0;
+			}
+			img {
+				display: none;
+			}
 		}
 		&-active {
 			.steps__number {
@@ -32,5 +41,36 @@
 	}
 	&__text {
 		margin-right: 16px;
+	}
+	@media ($media_lg3) {
+		&__item {
+			font-size: 14px;
+		}
+	}
+	@media ($media_md2) {
+		&__number {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+		&__item {
+			font-size: 12px;
+		}
+		&__text {
+			margin-right: 10px;
+		}
+	}
+	@media ($media_sm) {
+		&__list {
+			justify-content: space-between;
+		}
+		&__item {
+			font-size: 10px;
+		}
+		&__number {
+			width: 18px;
+			height: 18px;
+			margin-right: 5px;
+		}
 	}
 }

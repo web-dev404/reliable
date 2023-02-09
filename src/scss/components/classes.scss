@@ -466,7 +466,99 @@
 	&-item {
 		min-width: 490px;
 	}
+	@media ($media_lg3) {
+		&__inner-field {
+			max-width: 80px;
+		}
+		&__check {
+			padding: 14px 20px;
+			font-size: 14px;
+			&_mailing {
+				padding: 0;
+			}
+		}
+		&__input,
+		&__select,
+		&__inner-field,
+		&__area {
+			font-size: 14px;
+			padding: 10px;
+		}
+		&__name {
+			font-size: 12px;
+		}
+		&__checkbox {
+			width: 22px;
+			height: 22px;
+			flex-shrink: 0;
+			&::after {
+				width: 9px;
+				height: 9px;
+			}
+			&_mailing {
+				width: 16px;
+				height: 16px;
+				&::after {
+					width: inherit;
+					height: inherit;
+				}
+			}
+		}
+		&__agree-text {
+			font-size: 12px;
+		}
+	}
+	@media ($media_md) {
+		&-big {
+			grid-column: span 4;
+		}
+		&-small {
+			grid-column: span 4;
+		}
+		&__subtext {
+			font-size: 8px;
+			line-height: 10px;
+		}
+		&-item {
+			min-width: 420px;
+		}
+	}
+	@media ($media_sm) {
+		grid-column: span 5;
+		&__check {
+			font-size: 10px;
+			line-height: 12px;
+		}
+		&__agree-text {
+			font-size: 10px;
+		}
+	}
+	@media ($media_sm) {
+		&__field_agree {
+			order: 1;
+		}
+		&-big {
+			grid-column: span 10;
+		}
+		&__input,
+		&__select,
+		&__inner-field,
+		&__area {
+			font-size: 12px;
+			padding: 10px;
+		}
+		&-item {
+			min-width: 290px;
+		}
+	}
+	@media ($media_sm2) {
+		grid-column: span 6;
+		&-big {
+			grid-column: span 12;
+		}
+	}
 }
+
 .button-back {
 	display: flex;
 	align-items: center;
@@ -480,6 +572,12 @@
 	background: url("../../img/button-back/background.jpeg");
 	background-size: cover;
 	&__arrow {
+		width: 10px;
+		height: 20px;
 		margin-right: 42px;
+	}
+	@media ($media_sm) {
+		font-size: 14px;
+		padding: 16px 26px;
 	}
 }

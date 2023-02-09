@@ -1,4 +1,4 @@
-import * as nodePath from 'path';
+import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = `./dist`;
@@ -20,18 +20,18 @@ export const path = {
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`,
 		files: `${srcFolder}/files/**/*.*`,
-		svgicons: `${srcFolder}/svgicons/*.svg`
+		svgicons: `${srcFolder}/svgicons/*.svg`,
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,svg,ico,png,gif,webp}`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.html`,
-		files: `${srcFolder}/files/**/*.*`
+		files: `${srcFolder}/files/**/*.*`,
 	},
 	clean: buildFolder,
 	buildFolder: buildFolder,
 	srcFolder: srcFolder,
 	rootFolder: rootFolder,
-	ftp: `test`
-}
+	ftp: `test`,
+};
