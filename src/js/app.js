@@ -55,3 +55,36 @@ function dropDownFunc(dropDown) {
     });
   }
 };
+
+document.querySelectorAll('.dropdown-toggle').forEach(dropDownFilter);
+function dropDownFilter(dropDown) {
+    if(dropDown.classList.contains('click-dropdown') === true){
+        dropDown.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (this.nextElementSibling.classList.contains('dropdown-active') === true) {
+                this.parentElement.classList.remove('dropdown-open');
+                this.nextElementSibling.classList.remove('dropdown-active');
+
+            } else {
+                closeDropdown();
+                this.parentElement.classList.add('dropdown-open');
+                this.nextElementSibling.classList.add('dropdown-active');
+            }
+        });
+    }
+};
+window.addEventListener('click', function (e) {
+    if (e.target.closest('.dropdown-container') === null) {
+        closeDropdown();
+    }
+});
+
+
+function closeDropdown() {
+    document.querySelectorAll('.dropdown-container').forEach(function (container) {
+        container.classList.remove('dropdown-open')
+    });
+    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+        menu.classList.remove('dropdown-active');
+    });
+}
