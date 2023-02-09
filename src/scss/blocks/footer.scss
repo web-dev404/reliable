@@ -33,3 +33,17 @@
     color: $white4;
   }
 }
+
+@media screen and (max-width: 1200px){
+  .footer{
+    &.footer-nav{
+      margin-left: 0;
+    }
+    &__content{
+      display: none;
+    }
+    &__bottom{
+      padding: 16px;
+    }
+  }
+}

@@ -162,3 +162,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .swiper-products{
+    .swiper-button-prev,
+    .swiper-button-next{
+      display: none;
+    }
+  }
+}
