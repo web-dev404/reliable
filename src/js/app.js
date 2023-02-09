@@ -21,9 +21,10 @@ const swiperBanner = new Swiper('.swiper-banner', {
 const swiperProducts = new Swiper('.swiper-products', {
   loop: true,
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
   allowTouchMove: false,
+  modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

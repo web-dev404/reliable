@@ -22,10 +22,12 @@
 }
 
 .swiper-products{
-  padding-left: 33px;
+  padding-left: 9px;
   .swiper-button-prev,
   .swiper-button-next{
     top: 160px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     &::after{
       display: none;
@@ -135,6 +137,7 @@
     display: flex;
     align-items: center;
     color: $gray3;
+    text-decoration-line: line-through;
     img{
       margin-left: 1px;
     }
