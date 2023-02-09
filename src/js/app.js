@@ -30,6 +30,18 @@ const swiperProducts = new Swiper('.swiper-products', {
     prevEl: '.swiper-button-prev',
   },
 });
+const swiperNews = new Swiper('.swiper-news', {
+  loop: true,
+  spaceBetween: 12,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  allowTouchMove: false,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 document.querySelectorAll('.nav__link').forEach(dropDownFunc);
 function dropDownFunc(dropDown) {

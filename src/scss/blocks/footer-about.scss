@@ -1,0 +1,108 @@
+.footer-about{
+  padding-top: 30px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 43px;
+    background-color: $black4;
+    border-top: 1px solid $gold;
+    border-bottom: 1px solid $gold;
+  }
+  &__top-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+      color: $gold;
+      line-height: 22px;
+      margin-top: -4px;
+    }
+  }
+  &__phone-link{
+    color: $gray3;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__form{
+    max-width: 492px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__input{
+    width: 100%;
+    background-color: $white4;
+    border: 1px solid $gray3;
+    border-radius: 8px 0px 0px 8px;
+    line-height: 22px;
+    padding: 16px 15px;
+    &::placeholder{
+      color: $gray3;
+    }
+  }
+  &__btn{
+    font-weight: 500;
+    line-height: 20px;
+    color: $white4;
+    background-color: $gold;
+    border-radius: 0 8px 8px 0;
+    padding: 17px 5px;
+    margin: 0;
+    border: 1px solid $gold;
+  }
+  &__top-descr{
+    text-align: center;
+    color: $gray3;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  &__bottom{
+    padding: 60px 80px;
+  }
+  &__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__payments-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: $white4;
+  }
+  &__payments-list{
+    display: flex;
+    align-items: center;
+  }
+  &__payments-item:not(:last-child){
+    margin-right: 10px;
+  }
+  &__socials-title{
+    font-weight: 600;
+    max-width: 275px;
+    font-size: 36px;
+    line-height: 44px;
+    color: $white4;
+    margin-bottom: 14px;
+  }
+  &__socials-list{
+    display: flex;
+    align-items: center;
+  }
+  &__socials-item{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/footer-socials/item-bg.png');
+    border-radius: 8px;
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+  &__socials-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
