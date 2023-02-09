@@ -1,12 +1,12 @@
 body {
-  overflow-x: hidden;
-  position: relative;
-  color: $white;
-  background: $black;
+	overflow-x: hidden;
+	position: relative;
+	color: $white;
+	background: $grafit;
 
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  scroll-behavior: smooth;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -15,17 +15,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 a,
 button {
-  color: $white;
+	color: $white;
 }
 
 .container {
-  max-width: 1130px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+	max-width: 1140px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
 }

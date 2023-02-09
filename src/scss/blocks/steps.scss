@@ -1,0 +1,36 @@
+.steps {
+	margin-bottom: 40px;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		&:last-child img {
+			display: none;
+		}
+		&-active {
+			.steps__number {
+				color: $white;
+				background: $gold;
+			}
+		}
+	}
+	&__number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: $white;
+		color: $grafit;
+		font-weight: 500;
+		margin-right: 16px;
+	}
+	&__text {
+		margin-right: 16px;
+	}
+}

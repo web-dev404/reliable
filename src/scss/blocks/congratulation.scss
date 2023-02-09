@@ -1,0 +1,50 @@
+.congratulation {
+	margin-bottom: 30px;
+	&__container {
+		position: relative;
+	}
+	&__back {
+		position: absolute;
+		top: 18px;
+		right: 0px;
+	}
+	&__col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__success {
+		display: flex;
+		align-items: center;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 36px;
+		margin-bottom: 60px;
+	}
+	&__check {
+		margin-right: 30px;
+	}
+	&__info {
+		max-width: 885px;
+		text-align: center;
+	}
+	&__title {
+		background-image: url("../../img/congratulation/background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__text {
+		font-size: 32px;
+		font-weight: 600;
+		text-shadow: 7px 7px 4px #000000;
+	}
+	&__line {
+		max-width: 100%;
+		margin: 18px 0;
+		&:nth-of-type(2) {
+			margin: 30px 0;
+		}
+	}
+}
