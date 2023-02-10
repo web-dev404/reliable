@@ -118,7 +118,24 @@ navBtn.addEventListener('click', () => {
 window.addEventListener('click', e => {
   const target = e.target
   if (!target.closest('.nav') && !target.closest('.header')) {
-    navWrapper.classList.remove('active');
+    navWrapper?.classList.remove('active');
   body.classList.remove('stop-scroll');
   }
+});
+
+
+// ----- filters ----- //
+
+const filterBtn = document.querySelector('.catalog__filters-button'),
+      filterClose = document.querySelector('.catalog__filters-close'),
+      filterWrapper = document.querySelector('.catalog__filters');
+
+filterBtn?.addEventListener('click', () => {
+  filterWrapper.classList.add('active');
+  body.style.overflow = 'hidden';
+});
+
+filterClose?.addEventListener('click', () => {
+  filterWrapper.classList.remove('active');
+  body.style.overflow = '';
 });
