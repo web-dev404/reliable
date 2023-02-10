@@ -477,11 +477,21 @@
 			width: 345px;
 		}
 		&__title {
-			font-size: 26px;
+			font-size: 22px;
 			line-height: 26px;
 		}
 		&__subtitle {
 			margin-bottom: 12px;
+		}
+		.checkbox {
+			&__text {
+				font-size: 8px;
+				line-height: 10px;
+			}
+		}
+		& .checkbox__fake {
+			width: 30px;
+			height: 30px;
 		}
 	}
 }
