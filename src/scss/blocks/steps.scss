@@ -1,5 +1,10 @@
 .steps {
+	color: $white;
 	margin-bottom: 40px;
+	&__container {
+		max-width: 1140px;
+		padding: 0 15px;
+	}
 	&__arrow {
 		width: 24px;
 		height: 24px;
@@ -59,6 +64,10 @@
 		&__text {
 			margin-right: 10px;
 		}
+		&__arrow {
+			width: 12px;
+			height: 12px;
+		}
 	}
 	@media ($media_sm) {
 		&__list {
@@ -75,7 +84,7 @@
 	}
 	@media ($media_sm2) {
 		&__text {
-			margin-right: 0px;
+			margin-right: 3px;
 		}
 	}
 }
