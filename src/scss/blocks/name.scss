@@ -1,0 +1,15 @@
+.name {
+	margin-bottom: 15px;
+	&__container {
+		display: flex;
+		max-width: 1350px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		font-family: "Montserrat";
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 44px;
+	}
+}

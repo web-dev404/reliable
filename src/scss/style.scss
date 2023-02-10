@@ -1,15 +1,15 @@
-@import 'components/vars';
-@import 'components/mixins';
-@import 'components/classes';
-@import 'components/normalize';
+@import "components/vars";
+@import "components/mixins";
+@import "components/classes";
+@import "components/normalize";
 
 // reset
-@import 'components/reset';
-@import 'components/default';
+@import "components/reset";
+@import "components/default";
 
 // vendors
-@import 'vendor/swiper-bundle';
-@import 'vendor/aos';
+@import "vendor/swiper-bundle";
+@import "vendor/aos";
 
 // blocks
 @import 'blocks/header';
@@ -27,3 +27,8 @@
 @import 'blocks/footer-about';
 @import 'blocks/catalog';
 @import 'blocks/popular-options';
+@import "blocks/steps";
+@import "blocks/congratulation";
+@import "blocks/data";
+@import "blocks/recently";
+@import "blocks/name";
