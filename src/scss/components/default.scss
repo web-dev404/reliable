@@ -53,3 +53,13 @@ button {
     margin-top: 60px;
   }
 }
+
+.main-top{
+  margin-top: 114.39px;
+  @media screen and (max-width: 1200px){
+    margin-left: 0;
+  }
+  @media screen and (max-width: 480px){
+    margin-top: 60px;
+  }
+}
