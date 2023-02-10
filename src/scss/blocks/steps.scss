@@ -65,12 +65,17 @@
 			justify-content: space-between;
 		}
 		&__item {
-			font-size: 10px;
+			font-size: 9px;
 		}
 		&__number {
-			width: 18px;
-			height: 18px;
+			width: 16px;
+			height: 16px;
 			margin-right: 5px;
+		}
+	}
+	@media ($media_sm2) {
+		&__text {
+			margin-right: 0px;
 		}
 	}
 }
