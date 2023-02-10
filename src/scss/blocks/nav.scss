@@ -99,3 +99,44 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .nav{
+    width: 50%;
+    top: 62.08px;
+    height: calc(100% - 62.08px);
+    transform: translateX(-110%);
+    transition: .5s;
+    &.active{
+      transform: translateX(0);
+    }
+    &__inner{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .nav{
+    width: 80%;
+    &__inner{
+      padding-top: 63.39px;
+    }
+    &__search-input{
+      padding: 22px 14px;
+    }
+    &__search-btn{
+      width: 40px;
+      height: 40px;
+    }
+    &__link{
+      padding: 18px 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .nav{
+    width: 100%;
+  }
+}
