@@ -1,8 +1,10 @@
 .name {
+	color: $white;
 	margin-bottom: 15px;
 	&__container {
 		display: flex;
 		max-width: 1350px;
+		padding: 0 15px;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -11,5 +13,10 @@
 		font-weight: 600;
 		font-size: 36px;
 		line-height: 44px;
+	}
+	@media ($media_md2) {
+		&__title {
+			font-size: 28px;
+		}
 	}
 }
