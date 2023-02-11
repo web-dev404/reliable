@@ -145,6 +145,7 @@
     margin-right: 90px;
   }
   &__price-new{
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -154,6 +155,7 @@
     margin-right: 8px;
   }
   &__price-old{
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     color: $gray3;
@@ -459,6 +461,7 @@
     border-bottom: 1px solid $gold;
   }
   &__reviews-box{
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     span{
@@ -573,6 +576,320 @@
       &:not(:last-child){
         margin-right: 3.5px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .product-card{
+    &__content{
+      padding-left: 12px;
+      padding-top: 12px;
+      &::before{
+        display: none;
+      }
+    }
+    &__tags{
+      margin-bottom: 8px;
+    }
+    &__name{
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 12px;
+    }
+    &__models{
+      margin-bottom: 12px;
+    }
+    &__models-item{
+      width: 50px;
+      height: 50px;
+      &:not(:last-child){
+        margin-right: 12px;
+      }
+    }
+    &__sizes{
+      margin-bottom: 24px;
+    }
+    &__size{
+      padding: 4.5px 18px;
+      &:not(:last-child){
+        margin-right: 12px;
+      }
+    }
+    &__price{
+      width: 100%;
+    }
+    &__price-top{
+      width: 98%;
+      padding-right: 16px;
+      justify-content: space-between;
+    }
+    &__pricebox{
+      margin-right: 0;
+    }
+    &__buy-btn{
+      height: 48px;
+      padding: 12px 38px 12px 18px;
+      span{
+        margin-left: 14px;
+      }
+    }
+    &__favorites-btn{
+      width: 48px;
+      height: 48px;
+      img{
+        width: 28px;
+        height: 28px;
+      }
+    }
+    &__purchase{
+      width: 98%;
+      padding-bottom: 18px;
+    }
+    &__purchase-bottom{
+      justify-content: space-between;
+    }
+    &__purchase-copy{
+      margin-right: 0;
+    }
+    .productСard{
+      max-width: 100px;
+      height: 550px;
+      margin: 0 12px 0 0;
+    }
+    .productСard2{
+      max-width: 480px;
+      height: 550px;
+    }
+    &__info-imgbox{
+      display: none;
+    }
+    &__info-content{
+      max-width: 720px;
+    }
+    &__info-box{
+      max-width: 440px;
+    }
+    &__photos{
+      display: none;
+    }
+    &__reviews-header{
+      padding-right: 0;
+    }
+    &__reviews-inner{
+      padding-right: 0;
+    }
+    &__reviews-box{
+      span{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .product-card{
+    &__info-content{
+      max-width: 100%;
+    }
+    &__info-title{
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+    &__info-item{
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__info-box{
+      max-width: 380px;
+    }
+    .productСard{
+      display: none;
+    }
+    .productСard2{
+      max-width: 420px;
+      height: 520px;
+    }
+    &__reviews-inner{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__reviews-item{
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .product-card{
+    &__inner{
+      flex-direction: column;
+      padding-top: 0;
+    }
+    &__slider{
+      padding-right: 16px;
+      margin-bottom: 24px;
+    }
+    &__price{
+      width: auto;
+    }
+    &__pricebox{
+      margin-right: 100px;
+    }
+    &__scores{
+      flex-shrink: 0;
+    }
+    &__purchase{
+      width: auto;
+    }
+    &__purchase-copy{
+      margin-right: 66px;
+    }
+    .productСard2{
+      max-width: 100%;
+      img{
+        object-fit: contain;
+      }
+    }
+    &__info{
+      padding: 40px 16px;
+    }
+    &__info-title{
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__info-item{
+      font-size: 16px;
+      line-height: 20px;
+      &:not(:last-child){
+        margin-bottom: 16px;
+      }
+    }
+    &__info-box{
+      max-width: 240px;
+    }
+    &__info-line{
+      margin: 0 8px;
+    }
+    &__reviews{
+      padding: 20px 16px 30px 16px;
+    }
+    &__reviews-link{
+      padding: 16px;
+    }
+    &__reviews-sorting{
+      margin-bottom: 32px;
+      span{
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
+    &__item-name{
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__item-date{
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+    &__item-text{
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .product-card{
+    &__slider{
+      padding: 0;
+    }
+    &__content{
+      padding: 0 16px;
+    }
+    &__name{
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__sizes{
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    &__size{
+      margin-bottom: 12px;
+    }
+    &__price{
+      width: 100%;
+    }
+    &__price-top{
+      width: 100%;
+      padding-right: 0;
+    }
+    &__pricebox{
+      margin-right: 0;
+    }
+    &__purchase{
+      width: 100%;
+      padding-right: 0;
+    }
+    &__purchase-bottom{
+      justify-content: space-between;
+    }
+    &__purchase-copy{
+      margin-right: 0;
+    }
+    &__info-item:not(:last-child){
+      margin-bottom: 8px;
+    }
+    &__info-name{
+      font-weight: 700;
+      position: relative;
+      &::after{
+        content: ':';
+      }
+    }
+    &__info-item{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__info-line{
+      display: none;
+    }
+    &__reviews-header{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__reviews-title{
+      margin-bottom: 16px;
+    }
+    &__reviews-box{
+      flex-direction: column;
+      align-items: flex-start;
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+      span{
+        margin-left: 0;
+      }
+    }
+    &__reviews-wrapper{
+      padding: 16px 0 0 0;
+    }
+    &__reviews-sorting{
+      flex-direction: column;
+      align-items: flex-start;
+      span{
+        margin-right: 0;
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    .productСard2{
+      max-width: 100%;
+      height: auto;
     }
   }
 }

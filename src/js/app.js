@@ -57,7 +57,7 @@ const swiperNews = new Swiper('.swiper-news', {
     481: {
       slidesPerView: 2,
     },
-  }
+  },
 });
 
 var productСard = new Swiper(".productСard", {
@@ -68,14 +68,20 @@ var productСard = new Swiper(".productСard", {
   allowTouchMove: false,
 });
 var productСard2 = new Swiper(".productСard2", {
-  effect: "fade",
+  effect: "slide",
   navigation: false,
   spaceBetween: 10,
-  allowTouchMove: false,
+  allowTouchMove: true,
   modules: [ Thumbs, EffectFade ],
   thumbs: {
     swiper: productСard,
   },
+  breakpoints: {
+    1025: {
+      allowTouchMove: false,
+      effect: "fade",
+    },
+  }
 });
 
 document.querySelectorAll('.nav__link').forEach(dropDownFunc);

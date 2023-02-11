@@ -502,6 +502,7 @@
   &__list{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__item{
     padding-right: 12px;
