@@ -303,6 +303,9 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	&__link {
+		border-bottom: 1px solid $gold;
+	}
 	@media ($media_lg) {
 		&__items {
 			margin-right: 35px;
@@ -362,12 +365,10 @@
 			content: "";
 			position: absolute;
 			display: block;
-			position: "";
 			width: 12px;
 			height: 12px;
 			top: -1px;
 			left: -1px;
-			transition: 0.6s;
 			border: 2px solid $white;
 			border-radius: 50%;
 			background: $gold;
@@ -400,6 +401,10 @@
 		margin-bottom: 60px;
 		border-bottom: 0;
 		padding-bottom: 0;
+	}
+	&__qty-favorite,
+	&__qty-edit {
+		cursor: pointer;
 	}
 	@media ($media_xxxl) {
 		&__info {

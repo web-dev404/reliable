@@ -66,18 +66,23 @@
             <div class="field field-small">
                <div class="field__inner">
                   <div class="field__wrep">
-                     <span class='field__name'>Дом</span>
-                     <input type="text" class='field__inner-field' placeholder='Дом' name='house'>
+                     <label>
+                        <span class='field__name'>Дом</span>
+                        <input type="text" class='field__inner-field' placeholder='Дом' name='house'>
+                     </label>
                   </div>
                   <div class="field__wrap">
-                     <span class='field__name'>Квартира</span>
-                     <input type="text" class='field__inner-field' placeholder='Квартира' name='num'>
+                     <label>
+                        <span class='field__name'>Квартира</span>
+                        <input type="text" class='field__inner-field' placeholder='№' name='num'>
+                     </label>
                   </div>
                </div>
             </div>
             <div class="field field-big">
-               <span class='field__name'>Комментарий</span>
-               <textarea type="text" class='field__area' name='comment'></textarea>
+               <label for='message'><span class='field__name'>Комментарий</span></label>
+               <textarea type="text" class='field__area' name='comment' id='message'></textarea>
+
             </div>
          </div>
       </form>
