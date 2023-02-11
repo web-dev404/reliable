@@ -3,8 +3,37 @@
 @@include('html/nav.html', {})
 
 <main class="main">
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Каталог
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Товары для женщин
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Обувь
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Кроссовки
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link">
+          Кроссовки Adidas
+        </span>
+      </li>
+    </ul>
+  </div>
 
-  @@include('html/catalog.html', {})
+  @@include('html/product-card.html', {})
   <div class="products">
     <div class="products__header">
       <div class="products__title">
@@ -45,7 +74,7 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-                
+
               </div>
               <div class="swiper-products__credit">
                 В рассрочку на 3 мес. 2166 <img width="9" height="11" src="img/icons/icons.svg#price-new" alt=""> / мес
@@ -588,7 +617,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -625,7 +656,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -662,7 +695,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -699,7 +734,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -736,7 +773,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -773,7 +812,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -810,7 +851,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -847,7 +890,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -884,7 +929,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -921,7 +968,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -958,7 +1007,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -995,7 +1046,9 @@
                     <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
                   </div>
                 </div>
-
+                <div class="swiper-products__rating">
+                  <div class="product-card-rating" data-value="4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -1013,5 +1066,4 @@
   @@include('html/about.html', {})
   @@include('html/footer-about.html', {})
 </main>
-
 @@include('html/footer.html', {})
