@@ -435,7 +435,9 @@
 	&__qty-favorite,
 	&__qty-edit {
 		width: 30px;
-		cursor: pointer;
+		img {
+			cursor: pointer;
+		}
 	}
 	&__counter-wrapper {
 		width: 80px;
