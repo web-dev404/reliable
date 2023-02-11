@@ -144,44 +144,46 @@
 
 .details {
 	position: relative;
-	padding: 30px 15px;
+	padding: 30px 0px 15px;
 	border-top: 1px solid $gold;
 	border-bottom: 1px solid $gold;
-	max-width: 1140px;
 	margin: 0 auto;
 
+	&__container {
+		max-width: 1140px;
+		padding: 0 15px;
+	}
 	&__title {
 		text-align: center;
-		margin-bottom: 48px;
+		margin-bottom: 33px;
 	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 	}
+	&__item {
+		img {
+			width: 120px;
+			height: 120px;
+		}
+	}
 	&__order {
 		width: 280px;
 		flex-shrink: 0;
-	}
-	&__item {
-		display: flex;
-
-		img {
-			margin-right: 15px;
-		}
 	}
 	&__items {
 		flex-grow: 1;
 		margin-right: 57px;
 	}
 	&__row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-bottom: 30px;
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	&__cell {
+		vertical-align: middle;
+		padding: 15px 0;
 	}
 	&__item-title,
 	&__item-color,
@@ -243,18 +245,19 @@
 	}
 
 	&__counter {
-		display: flex;
-		align-items: center;
-		margin-right: 54px;
+		text-align: center;
 	}
-
 	&__counter-current {
+		vertical-align: middle;
+		display: inline;
 		color: #f6f6f6;
 		font-weight: 500;
 		margin: 0 16px;
 	}
 
 	&__counter-control {
+		vertical-align: middle;
+		display: inline;
 		cursor: pointer;
 	}
 	&__order-item {
@@ -303,31 +306,57 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	@media ($media_lg) {
-		&__items {
-			margin-right: 35px;
+	&__link {
+		border-bottom: 1px solid $gold;
+	}
+	&__counter {
+		margin: 0 auto;
+		justify-content: center;
+	}
+	&__qty-favorite,
+	&__qty-edit {
+		img {
+			min-width: 30px;
 		}
-		&__counter {
-			margin-right: 30px;
+	}
+	&__qty-favorite {
+		padding: 15px 0 15px 50px;
+	}
+	&__qty-edit {
+		padding: 15px 0 15px 44px;
+	}
+	&__item {
+		width: 120px;
+		img {
+			min-width: 120px;
+			display: block;
 		}
-		&__qty-price {
-			margin-right: 35px;
-		}
-		&__qty-favorite {
-			margin-right: 25px;
-		}
-		&__item-title,
-		&__item-color,
-		&__item-size {
-			font-size: 14px;
-		}
-		&__item img {
-			width: 90px;
-			height: 90px;
-		}
-		&__item-color {
-			margin: 15px 0;
-		}
+	}
+	&__counter-wrapper {
+		padding: 15px 0 15px 50px;
+	}
+	&__counter {
+		min-width: 87px;
+	}
+	&__item-wrap {
+		padding: 15px 0 15px 15px;
+	}
+	&__item-sizes {
+		display: block;
+	}
+	&__qty-price--new,
+	&__qty-price--old {
+		text-align: center;
+		padding: 15px 5px;
+	}
+	&__item-discount {
+		display: inline-block;
+	}
+	&__item-size {
+		display: inline;
+	}
+	&__information {
+		max-width: 180px;
 	}
 	&__submit {
 		color: $grafit;
@@ -362,12 +391,10 @@
 			content: "";
 			position: absolute;
 			display: block;
-			position: "";
 			width: 12px;
 			height: 12px;
 			top: -1px;
 			left: -1px;
-			transition: 0.6s;
 			border: 2px solid $white;
 			border-radius: 50%;
 			background: $gold;
@@ -401,17 +428,73 @@
 		border-bottom: 0;
 		padding-bottom: 0;
 	}
+	&__qty-price--new,
+	&__qty-price--old {
+		width: 50px;
+	}
+	&__qty-favorite,
+	&__qty-edit {
+		width: 30px;
+		img {
+			cursor: pointer;
+		}
+	}
+	&__counter-wrapper {
+		width: 80px;
+	}
 	@media ($media_xxxl) {
 		&__info {
 			margin-right: 0;
 		}
 	}
+	@media ($media_lg) {
+		&__items {
+			margin-right: 35px;
+		}
+		&__qty-price {
+			margin-right: 35px;
+		}
+		&__qty-favorite {
+			padding-left: 30px;
+		}
+		&__qty-edit {
+			padding-left: 25px;
+		}
+		&__qty-favorite,
+		&__qty-edit {
+			img {
+				min-width: 20px;
+			}
+		}
+		&__item-title,
+		&__item-color,
+		&__item-size {
+			font-size: 14px;
+		}
+		&__counter-wrapper {
+			padding-left: 30px;
+		}
+		&__item {
+			width: 90px;
+			img {
+				min-width: 90px;
+				height: 90px;
+			}
+		}
+		&__item-color {
+			margin: 15px 0;
+		}
+	}
 	@media ($media_lg2) {
+		padding-top: 15px;
 		&__row {
 			&:last-child {
 				padding-bottom: 30px;
-				border-bottom: 1px solid $gold;
 			}
+		}
+		&__order {
+			padding-top: 15px;
+			border-top: 1px solid $gold;
 		}
 		&__form {
 			display: flex;
@@ -428,7 +511,7 @@
 		&__items {
 			width: 100%;
 			margin-right: 0;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 		}
 		&__order {
 			width: 100%;
@@ -452,20 +535,15 @@
 		}
 		&__title {
 			font-size: 24px;
-			margin-bottom: 28px;
+			margin-bottom: 10px;
 		}
+		&__counter-wrapper,
 		&__qty-favorite {
-			width: 20px;
+			padding-left: 20px;
 		}
-		&__qty-edit {
-			width: 20px;
-		}
-		&__counter {
-			margin-right: 25px;
-		}
-		&__qty-price {
+		&__qty-price--new,
+		&__qty-price--old {
 			font-size: 14px;
-			margin-right: 20px;
 		}
 		&__item-title,
 		&__item-color,
@@ -476,38 +554,109 @@
 			margin: 12px 0;
 		}
 		&__item-discount {
-			font-size: 9px;
+			margin-left: 10px;
+			font-size: 7px;
 		}
 	}
 	@media ($media_sm) {
+		&__counter-control {
+			width: 15px;
+			height: 15px;
+		}
 		&__qty-price {
-			margin-right: 0;
 			margin-bottom: 5px;
 		}
-		&__counter {
-			margin-right: 0;
-			margin-bottom: 5px;
+		&__qty-price--new,
+		&__qty-price--old {
+			font-size: 12px;
 		}
-		&__qty {
-			flex-direction: column;
-			align-items: flex-end;
+		&__counter-wrapper {
+			padding-left: 10px;
 		}
-		&__qty-favorite {
-			margin-right: 38px;
+		&__item {
+			width: 50px;
+			img {
+				min-width: 50px;
+				height: 50px;
+			}
+		}
+		&__item-color {
+			margin: 5px 0;
+		}
+		&__item-wrap {
+			padding-left: 5px;
+		}
+		&__qty-favorite,
+		&__qty-edit {
+			padding-left: 5px;
+			width: 15px;
+			img {
+				min-width: 15px;
+			}
+		}
+		&__qty-price--new,
+		&__qty-price--old {
+			padding: 15px 2px;
+			font-size: 10px;
+		}
+		&__counter-wrapper {
+			padding-left: 0px;
 		}
 	}
 	@media ($media_sm2) {
 		&__item-title,
 		&__item-color,
 		&__item-size {
-			font-size: 10px;
+			font-size: 8px;
 		}
-		&__item img {
-			width: 70px;
-			height: 70px;
+		&__item {
+			width: 40px;
+			img {
+				min-width: 40px;
+				height: 40px;
+			}
 		}
-		&__qty-price--new {
-			margin-right: 10px;
+		&__item-color {
+			margin: 0;
+		}
+		&__counter-wrapper {
+			width: 55px;
+		}
+		&__counter-control {
+			img {
+				width: 15px;
+				height: 15px;
+			}
+		}
+		&__counter {
+			min-width: 66px;
+		}
+		&__item-discount {
+			padding: 3px 6px;
+		}
+		&__counter-current {
+			margin: 0 5px;
+		}
+	}
+	@media ($media_xs) {
+		&__item {
+			width: 35px;
+			img {
+				min-width: 35px;
+				height: 35px;
+			}
+		}
+		&__qty-price--new,
+		&__qty-price--old {
+			font-size: 9px;
+		}
+		&__qty-favorite,
+		&__qty-edit {
+			padding-left: 2px;
+			width: 15px;
+			img {
+				min-width: 15px;
+			}
 		}
 	}
 }

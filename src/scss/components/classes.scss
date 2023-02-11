@@ -349,6 +349,9 @@
 		border: 1px solid $white;
 		border-radius: 8px;
 	}
+	&__area {
+		min-height: 100px;
+	}
 	&__check {
 		cursor: pointer;
 		display: flex;
@@ -482,7 +485,7 @@
 		&__inner-field,
 		&__area {
 			font-size: 14px;
-			padding: 10px;
+			padding: 8px;
 		}
 		&__name {
 			font-size: 12px;
@@ -573,7 +576,7 @@
 	background: url("../../img/button-back/background.jpeg");
 	background-size: cover;
 	&__arrow {
-		width: 10px;
+		width: 20px;
 		height: 20px;
 		margin-right: 42px;
 	}
