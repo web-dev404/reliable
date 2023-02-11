@@ -1,204 +1,185 @@
 <div class="background">
-  <div class="callback">
-    <button class="callback-btn callback-order">
-      <img src="../img/callback.svg" alt="callback icon" />
-    </button>
-  </div>
-  <div class="step">
-    <div class="step__item step__item-line-one">
-      <div class="step__item-box">1</div>
-    </div>
-    <div class="step__item step__item-line-two">
-      <div class="step__item-box">2</div>
-      <span>Оформление заказа</span>
-    </div>
-    <div class="step__item step__item-line-three">
-      <div class="step__item-box">3</div>
-      <span>Оплата</span>
-    </div>
-    <div class="step__item">
-      <div class="step__item-box step__item-box--active">4</div>
-      <span>Обзор</span>
-    </div>
-  </div>
-
-  <div class="order">
-    <div class="order__done">
-      <img src="../img/order-done.svg" alt="done icon" />
-      <h2 class="order__done-title title">Заказ оплачен</h2>
-      <div class="btn">
-        <button class="button-catalog order__done-btn">Каталог</button>
-      </div>
-    </div>
-
-    <div class="order__text">
-      <h2 class="order__text-title">Благодарим за покупку!</h2>
-      <div class="order__line-up">
-        <img src="../img/line/polygon.svg" alt="polygon icon" />
-      </div>
-      <h3 class="order__text-desc">Ваш заказ будет обработан как можно скорее.</h3>
-      <div class="order__line-down">
-        <img src="../img/line/polygon.svg" alt="polygon icon" />
-      </div>
-      <p class="order__text-description">
-        Вскоре вы получите электронное письмо со счетом за ваш заказ.<br />
-        Если у Вас есть вопросы, пожалуйста, свяжитесь с нами.
-      </p>
-    </div>
-  </div>
-
   <div class="details">
     <h2 class="details__title title">Детали заказа</h2>
     <div class="details__wrapper">
       <div class="details__items">
-        <div class="details__item">
-          <img src="../img/shoes/1.jpg" alt="adidas shoes icon" />
-          <div class="details__item-wrap">
-            <h6 class="details__item-title">Кроссовки Adidas</h6>
-            <div class="details__item-color">
-              Цвет товара:
-              <span> белый</span>
-            </div>
-            <div class="details__item-sizes">
-              <div class="details__item-size">
-                Размер:
-                <span> 41</span>
+        <div class="details__row">
+          <div class="details__item">
+            <img src="../img/shoes/1.jpg" alt="adidas shoes icon" />
+            <div class="details__item-wrap">
+              <h6 class="details__item-title">Кроссовки Adidas</h6>
+              <div class="details__item-color">
+                Цвет товара:
+                <span> белый</span>
               </div>
-              <div class="details__item-discount">20%</div>
-            </div>
-          </div>
-        </div>
-        <div class="details__item">
-          <img src="../img/shoes/2.jpg" alt="adidas shoes icon" />
-          <div class="details__item-wrap">
-            <h6 class="details__item-title">Кроссовки Adidas</h6>
-            <div class="details__item-color">
-              Цвет товара:
-              <span> черный</span>
-            </div>
-            <div class="details__item-sizes">
-              <div class="details__item-size">
-                Размер:
-                <span> 41</span>
+              <div class="details__item-sizes">
+                <div class="details__item-size">
+                  Размер:
+                  <span> 41</span>
+                </div>
+                <div class="details__item-discount">20%</div>
               </div>
-              <div class="details__item-discount">20%</div>
             </div>
           </div>
-        </div>
-        <div class="details__item">
-          <img src="../img/shoes/3.jpg" alt="adidas shoes icon" />
-          <div class="details__item-wrap">
-            <h6 class="details__item-title">Кроссовки Adidas</h6>
-            <div class="details__item-color">
-              Цвет товара:
-              <span> хаки</span>
-            </div>
-            <div class="details__item-sizes">
-              <div class="details__item-size">
-                Размер:
-                <span> 41</span>
+          <div class="details__quantity">
+            <div class="details__qty">
+              <div class="details__qty-price">
+                <div class="details__qty-price--new">
+                  6500
+                  <img src="../img/rub-gold.svg" alt="symbol rub" />
+                </div>
+                <div class="details__qty-price--old">
+                  7800
+                  <img src="../img/rub-gray.svg" alt="symbol rub" />
+                </div>
               </div>
-              <div class="details__item-discount">20%</div>
+              <div class="details__counter">
+                <div class="details__counter-control" data-action="minus">
+                  <img src="../img/minus.svg" alt="symbol minus" />
+                </div>
+                <div class="details__counter-current" data-counter="">1</div>
+                <div class="details__counter-control" data-action="plus">
+                  <img src="../img/plus.svg" alt="symbol plus" />
+                </div>
+              </div>
+              <div class="details__buttons">
+                <div class="details__qty-favorite">
+                  <img src="../img/favorite.svg" alt="favorite icon" />
+                </div>
+                <div class="details__qty-edit">
+                  <img src="../img/edit.svg" alt="edit icon" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="details__quantity">
-        <div class="details__qty">
-          <div class="details__qty-price">
-            <div class="details__qty-price--new">
-              6500
-              <img src="../img/rub-gold.svg" alt="symbol rub" />
-            </div>
-            <div class="details__qty-price--old">
-              7800
-              <img src="../img/rub-gray.svg" alt="symbol rub" />
-            </div>
-          </div>
-          <div class="details__counter">
-            <div class="details__counter-control" data-action="minus">
-              <img src="../img/minus.svg" alt="symbol minus" />
-            </div>
-            <div class="details__counter-current" data-counter="">1</div>
-            <div class="details__counter-control" data-action="plus">
-              <img src="../img/plus.svg" alt="symbol plus" />
+        <div class="details__row">
+          <div class="details__item">
+            <img src="../img/shoes/2.jpg" alt="adidas shoes icon" />
+            <div class="details__item-wrap">
+              <h6 class="details__item-title">Кроссовки Adidas</h6>
+              <div class="details__item-color">
+                Цвет товара:
+                <span>черный</span>
+              </div>
+              <div class="details__item-sizes">
+                <div class="details__item-size">
+                  Размер:
+                  <span> 41</span>
+                </div>
+                <div class="details__item-discount">20%</div>
+              </div>
             </div>
           </div>
-          <div class="details__qty-favorite">
-            <img src="../img/favorite.svg" alt="favorite icon" />
-          </div>
-          <div class="details__qty-edit">
-            <img src="../img/edit.svg" alt="edit icon" />
-          </div>
-        </div>
-        <div class="details__qty">
-          <div class="details__qty-price">
-            <div class="details__qty-price--new">
-              6500
-              <img src="../img/rub-gold.svg" alt="symbol rub" />
+          <div class="details__quantity">
+            <div class="details__qty">
+              <div class="details__qty-price">
+                <div class="details__qty-price--new">
+                  6500
+                  <img src="../img/rub-gold.svg" alt="symbol rub" />
+                </div>
+                <div class="details__qty-price--old">
+                  7800
+                  <img src="../img/rub-gray.svg" alt="symbol rub" />
+                </div>
+              </div>
+              <div class="details__counter">
+                <div class="details__counter-control" data-action="minus">
+                  <img src="../img/minus.svg" alt="symbol minus" />
+                </div>
+                <div class="details__counter-current" data-counter="">1</div>
+                <div class="details__counter-control" data-action="plus">
+                  <img src="../img/plus.svg" alt="symbol plus" />
+                </div>
+              </div>
+              <div class="details__buttons">
+                <div class="details__qty-favorite">
+                  <img src="../img/favorite.svg" alt="favorite icon" />
+                </div>
+                <div class="details__qty-edit">
+                  <img src="../img/edit.svg" alt="edit icon" />
+                </div>
+              </div>
             </div>
-            <div class="details__qty-price--old">
-              7800
-              <img src="../img/rub-gray.svg" alt="symbol rub" />
-            </div>
-          </div>
-          <div class="details__counter">
-            <div class="details__counter-control" data-action="minus">
-              <img src="../img/minus.svg" alt="symbol minus" />
-            </div>
-            <div class="details__counter-current" data-counter="">1</div>
-            <div class="details__counter-control" data-action="plus">
-              <img src="../img/plus.svg" alt="symbol plus" />
-            </div>
-          </div>
-          <div class="details__qty-favorite">
-            <img src="../img/favorite.svg" alt="favorite icon" />
-          </div>
-          <div class="details__qty-edit">
-            <img src="../img/edit.svg" alt="edit icon" />
           </div>
         </div>
-        <div class="details__qty">
-          <div class="details__qty-price">
-            <div class="details__qty-price--new">
-              6500
-              <img src="../img/rub-gold.svg" alt="symbol rub" />
-            </div>
-            <div class="details__qty-price--old">
-              7800
-              <img src="../img/rub-gray.svg" alt="symbol rub" />
-            </div>
-          </div>
-          <div class="details__counter">
-            <div class="details__counter-control" data-action="minus">
-              <img src="../img/minus.svg" alt="symbol minus" />
-            </div>
-            <div class="details__counter-current" data-counter="">1</div>
-            <div class="details__counter-control" data-action="plus">
-              <img src="../img/plus.svg" alt="symbol plus" />
+        <div class="details__row">
+          <div class="details__item">
+            <img src="../img/shoes/3.jpg" alt="adidas shoes icon" />
+            <div class="details__item-wrap">
+              <h6 class="details__item-title">Кроссовки Adidas</h6>
+              <div class="details__item-color">
+                Цвет товара:
+                <span>хаки</span>
+              </div>
+              <div class="details__item-sizes">
+                <div class="details__item-size">
+                  Размер:
+                  <span> 41</span>
+                </div>
+                <div class="details__item-discount">20%</div>
+              </div>
             </div>
           </div>
-          <div class="details__qty-favorite">
-            <img src="../img/favorite.svg" alt="favorite icon" />
-          </div>
-          <div class="details__qty-edit">
-            <img src="../img/edit.svg" alt="edit icon" />
+          <div class="details__quantity">
+            <div class="details__qty">
+              <div class="details__qty-price">
+                <div class="details__qty-price--new">
+                  6500₽
+                </div>
+                <div class="details__qty-price--old">
+                  7800₽
+                </div>
+              </div>
+              <div class="details__counter">
+                <div class="details__counter-control" data-action="minus">
+                  <img src="../img/minus.svg" alt="symbol minus" />
+                </div>
+                <div class="details__counter-current" data-counter="">1</div>
+                <div class="details__counter-control" data-action="plus">
+                  <img src="../img/plus.svg" alt="symbol plus" />
+                </div>
+              </div>
+              <div class="details__buttons">
+                <div class="details__qty-favorite">
+                  <img src="../img/favorite.svg" alt="favorite icon" />
+                </div>
+                <div class="details__qty-edit">
+                  <img src="../img/edit.svg" alt="edit icon" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="details__order">
         <ul class="details__order-list">
-          <li class="details__order-item">Сумма заказа:</li>
-          <li class="details__order-item">Скидка:</li>
-          <li class="details__order-item">Итоговая сумма:</li>
-          <li class="details__order-item">Способ оплаты:</li>
+          <li class="details__order-item"><span class='details__order-name'>Сумма заказа:</span><span
+              class='details__order-value details__order-value_gold'>19500₽</span></li>
+          <li class="details__order-item"><span
+              class='details__order-name details__order-name_discount'>Скидка:</span><span
+              class='details__order-value details__order-value_discount'>3900₽</span></li>
+          <li class="details__order-item"><span class='details__order-name details__order-name_middle'>Итоговая
+              сумма:</span><span class='details__order-value details__order-value_gold'>19500₽</span></li>
+          <li class="details__order-item"><span class='details__order-name details__order-name_middle'>Способ
+              оплаты:</span><span class='details__order-value details__order-value_way'>Онлайн</span></li>
         </ul>
-        <ul class="details__order-list">
-          <li class="details__order-item details__order-item--price">19500</li>
-          <li class="details__order-item">3900</li>
-          <li class="details__order-item details__order-item--price">19500</li>
-          <li class="details__order-item">Онлайн</li>
-        </ul>
+        @@if (accept === "true"){
+        <form action="#" class='details__form'>
+          <button class='details__submit' type='submit'>Оплата и оформление заказа</button>
+          <div class="details__agree">
+            <label class='details__checkbox'>
+              <input type="checkbox" class='details__check-fake' checked>
+              <div class="details__box"></div>
+            </label>
+            <p class="details__info">Нажимая кнопку “Оплатить и оформить заказ”,
+              я принимаю условия Публичной оферты и даю
+              свое согласие на обработку моих персональных
+              данных на условиях и для целей, определенных в
+              Согласии на обработку персональных данных</p>
+          </div>
+        </form>
+        }
       </div>
     </div>
   </div>

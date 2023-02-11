@@ -1,11 +1,797 @@
 @@include('html/head.html', { "title": "Оформление" }) @@include('html/header.html', {})
 
-@@include('html/nav.html', {})
 <main class="main-top">
    @@include('html/name.html', {})
    @@include('html/steps.html', {
    "number": '2'
    })
-   @@include('html/recently.html', {})
+   <div class="background">
+      <div class="details details_cart1">
+         <h2 class="details__title title">Детали заказа</h2>
+         <div class="details__wrapper">
+            <div class="details__items">
+               <div class="details__row">
+                  <div class="details__item">
+                     <img src="../img/shoes/1.jpg" alt="adidas shoes icon" />
+                     <div class="details__item-wrap">
+                        <h6 class="details__item-title">Кроссовки Adidas</h6>
+                        <div class="details__item-color">
+                           Цвет товара:
+                           <span> белый</span>
+                        </div>
+                        <div class="details__item-sizes">
+                           <div class="details__item-size">
+                              Размер:
+                              <span> 41</span>
+                           </div>
+                           <div class="details__item-discount">20%</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="details__quantity">
+                     <div class="details__qty">
+                        <div class="details__qty-price">
+                           <div class="details__qty-price--new">
+                              6500
+                              <img src="../img/rub-gold.svg" alt="symbol rub" />
+                           </div>
+                           <div class="details__qty-price--old">
+                              7800
+                              <img src="../img/rub-gray.svg" alt="symbol rub" />
+                           </div>
+                        </div>
+                        <div class="details__counter">
+                           <div class="details__counter-control" data-action="minus">
+                              <img src="../img/minus.svg" alt="symbol minus" />
+                           </div>
+                           <div class="details__counter-current" data-counter="">1</div>
+                           <div class="details__counter-control" data-action="plus">
+                              <img src="../img/plus.svg" alt="symbol plus" />
+                           </div>
+                        </div>
+                        <div class="details__buttons">
+                           <div class="details__qty-favorite">
+                              <img src="../img/favorite.svg" alt="favorite icon" />
+                           </div>
+                           <div class="details__qty-edit">
+                              <img src="../img/edit.svg" alt="edit icon" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="details__row">
+                  <div class="details__item">
+                     <img src="../img/shoes/2.jpg" alt="adidas shoes icon" />
+                     <div class="details__item-wrap">
+                        <h6 class="details__item-title">Кроссовки Adidas</h6>
+                        <div class="details__item-color">
+                           Цвет товара:
+                           <span>черный</span>
+                        </div>
+                        <div class="details__item-sizes">
+                           <div class="details__item-size">
+                              Размер:
+                              <span> 41</span>
+                           </div>
+                           <div class="details__item-discount">20%</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="details__quantity">
+                     <div class="details__qty">
+                        <div class="details__qty-price">
+                           <div class="details__qty-price--new">
+                              6500
+                              <img src="../img/rub-gold.svg" alt="symbol rub" />
+                           </div>
+                           <div class="details__qty-price--old">
+                              7800
+                              <img src="../img/rub-gray.svg" alt="symbol rub" />
+                           </div>
+                        </div>
+                        <div class="details__counter">
+                           <div class="details__counter-control" data-action="minus">
+                              <img src="../img/minus.svg" alt="symbol minus" />
+                           </div>
+                           <div class="details__counter-current" data-counter="">1</div>
+                           <div class="details__counter-control" data-action="plus">
+                              <img src="../img/plus.svg" alt="symbol plus" />
+                           </div>
+                        </div>
+                        <div class="details__buttons">
+                           <div class="details__qty-favorite">
+                              <img src="../img/favorite.svg" alt="favorite icon" />
+                           </div>
+                           <div class="details__qty-edit">
+                              <img src="../img/edit.svg" alt="edit icon" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="details__row">
+                  <div class="details__item">
+                     <img src="../img/shoes/3.jpg" alt="adidas shoes icon" />
+                     <div class="details__item-wrap">
+                        <h6 class="details__item-title">Кроссовки Adidas</h6>
+                        <div class="details__item-color">
+                           Цвет товара:
+                           <span>хаки</span>
+                        </div>
+                        <div class="details__item-sizes">
+                           <div class="details__item-size">
+                              Размер:
+                              <span> 41</span>
+                           </div>
+                           <div class="details__item-discount">20%</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="details__quantity">
+                     <div class="details__qty">
+                        <div class="details__qty-price">
+                           <div class="details__qty-price--new">
+                              6500₽
+                           </div>
+                           <div class="details__qty-price--old">
+                              7800₽
+                           </div>
+                        </div>
+                        <div class="details__counter">
+                           <div class="details__counter-control" data-action="minus">
+                              <img src="../img/minus.svg" alt="symbol minus" />
+                           </div>
+                           <div class="details__counter-current" data-counter="">1</div>
+                           <div class="details__counter-control" data-action="plus">
+                              <img src="../img/plus.svg" alt="symbol plus" />
+                           </div>
+                        </div>
+                        <div class="details__buttons">
+                           <div class="details__qty-favorite">
+                              <img src="../img/favorite.svg" alt="favorite icon" />
+                           </div>
+                           <div class="details__qty-edit">
+                              <img src="../img/edit.svg" alt="edit icon" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="details__order">
+               <ul class="details__order-list">
+                  <li class="details__order-item"><span class='details__order-name'>Сумма заказа:</span><span
+                        class='details__order-value details__order-value_gold'>19500₽</span></li>
+                  <li class="details__order-item"><span
+                        class='details__order-name details__order-name_discount'>Скидка:</span><span
+                        class='details__order-value details__order-value_discount'>3900₽</span></li>
+                  <li class="details__order-item"><span class='details__order-name details__order-name_middle'>Итоговая
+                        сумма:</span><span class='details__order-value details__order-value_gold'>19500₽</span></li>
+                  <li class="details__order-item"><span class='details__order-name details__order-name_middle'>Способ
+                        оплаты:</span><span class='details__order-value details__order-value_way'>Онлайн</span></li>
+               </ul>
+            </div>
+         </div>
+         <div class="details__footer">
+            <img src="./img/details/left.png">
+            <img src="./img/details/right.png">
+         </div>
+      </div>
+   </div>
+   <div class="products">
+      <div class="products__header">
+         <div class="products__title">
+            Недавно просмотренные
+         </div>
+         <a class="products__all" href="#">
+            <span>
+               Все товары
+            </span>
+            <img width="41" height="20" src="img/icons/icons.svg#all-products" alt="">
+         </a>
+      </div>
+      <div class="swiper swiper-products">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/3.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Ботинки ECCO EXOSTRIKE
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/1.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Туфли на шпильке CASADEI
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              7000
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              8400
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/3.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Ботинки ECCO EXOSTRIKE
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/1.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Туфли на шпильке CASADEI
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              7000
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              8400
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/3.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Ботинки ECCO EXOSTRIKE
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/2.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Кроссовки HENDERSEN
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              6500
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              7800
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="swiper-products__inner">
+                  <div class="swiper-products__top">
+                     <label class="swiper-products__favorites">
+                        <input class="swiper-products__favorites-input" type="checkbox" name="favorites">
+                        <span class="swiper-products__favorites-checkbox"></span>
+                     </label>
+                  </div>
+                  <div class="swiper-products__imgbox">
+                     <img width="179" height="200" src="../img/products/1.png" alt="">
+                  </div>
+                  <div class="swiper-products__content">
+                     <div class="swiper-products__tags">
+                        <a class="swiper-products__tags-item" style="background-color: #DDBB64; color: #42403D;"
+                           href="#">Новинка</a>
+                        <a class="swiper-products__tags-item" style="background-color: #FF7A5B; color: #FFFFFF;"
+                           href="#">20%</a>
+                     </div>
+                     <a class="swiper-products__name" href="#">
+                        Туфли на шпильке CASADEI
+                     </a>
+                     <div class="swiper-products__bottom">
+                        <div class="swiper-products__price">
+                           <div class="swiper-products__price-new">
+                              7000
+                              <img width="9" height="11" src="img/icons/icons.svg#price-new" alt="">
+                           </div>
+                           <div class="swiper-products__price-old">
+                              8400
+                              <img width="9" height="11" src="img/icons/icons.svg#price-old" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-products__rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-button-prev">
+            <img width="30" height="30" src="img/icons/icons.svg#banner-prev" alt="">
+         </div>
+         <div class="swiper-button-next">
+            <img width="30" height="30" src="img/icons/icons.svg#banner-next" alt="">
+         </div>
+      </div>
+   </div>
 </main>
-@@include('html/footer.html', {})
+
+<footer class="footer">
+	<div class="footer__content">
+		<div class="footer__inner">
+			<div class="footer__logo">
+				<a class="footer__logo-link" href="#">
+					<img width="180" height="41" src="../img/footer-logo.png" alt="">
+				</a>
+			</div>
+			<div class="footer__item">
+				<div class="footer__item-title">
+					О КОМПАНИИ
+				</div>
+				<ul class="footer__item-list">
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Пресс - релизы</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Новости</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">История компании</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Контакты</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Благотворительность</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Вакансии</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Правовая информация</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<div class="footer__item-title">
+					ПАРТНЕРАМ
+				</div>
+				<ul class="footer__item-list">
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Стать партнерам</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Франчайзинг</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Стать франчайзи</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Рекламные материалы</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Продажа комплектующих</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Поставщикам</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Покупка оптом</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<div class="footer__item-title">
+					ПОКУПАТЕЛЯМ
+				</div>
+				<ul class="footer__item-list">
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Оплата</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Доставка</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Возврат</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Гарантия</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Бонусная программа</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Карта лояльности</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Подарочная карта</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Таблица размеров</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Обработка данных</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Договор оферты</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Политика конфиденциальности</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Архив</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Советы покупателям</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Как оформить заказ</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Вопрос-ответ</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Мужская обувь</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Женская обувь</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Детская обувь</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Сумки</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Аксессуары</a>
+					</li>
+					<li class="footer__item-item">
+						<a class="footer__item-link" href="#">Парфюмерия</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__copy">
+			© 2023 ReLiable. Все права защищены.
+		</div>
+	</div>
+</footer>
+
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
