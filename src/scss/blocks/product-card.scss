@@ -559,6 +559,9 @@
       &.active{
         background-image: url('../img/icons/icons.svg#product-card-star-active');
       }
+      &:not(:last-child){
+        margin-right: 2px;
+      }
     }
   }
 }
