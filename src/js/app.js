@@ -1,6 +1,6 @@
 import * as flsFunctions from './modules/functions.js';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination, EffectFade, Thumbs } from 'swiper';
 import smoothScroll from './modules/smooth-scroll.js';
 
 flsFunctions.isWebp();
@@ -58,6 +58,24 @@ const swiperNews = new Swiper('.swiper-news', {
       slidesPerView: 2,
     },
   }
+});
+
+var productСard = new Swiper(".productСard", {
+  direction: 'vertical',
+  navigation: false,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  allowTouchMove: false,
+});
+var productСard2 = new Swiper(".productСard2", {
+  effect: "fade",
+  navigation: false,
+  spaceBetween: 10,
+  allowTouchMove: false,
+  modules: [ Thumbs, EffectFade ],
+  thumbs: {
+    swiper: productСard,
+  },
 });
 
 document.querySelectorAll('.nav__link').forEach(dropDownFunc);
@@ -139,3 +157,83 @@ filterClose?.addEventListener('click', () => {
   filterWrapper.classList.remove('active');
   body.style.overflow = '';
 });
+
+
+// ----- rating ----- //
+
+class RatingReviews {
+  constructor(dom) {
+    dom.innerHTML = '<div class="reviews-rating__box" style="width: 149px; height: 27px;"></div>';
+    this.div = dom.querySelector('div');
+    for(var i = 0; i < 5; i++)
+      this.div.innerHTML += `<div data-value="${i+1}">`;
+    this.render();
+  }
+
+  change(e) {
+    let value = e.target.dataset.value;
+    value && (this.svg.parentNode.dataset.value = value);
+    this.render();
+  }
+
+  render() {
+    this.div.querySelectorAll('div').forEach(star => {
+      let on = +this.div.parentNode.dataset.value >= +star.dataset.value;
+      star.classList.toggle('active', on);
+    });
+  }
+}
+
+document.querySelectorAll('.reviews-rating').forEach(dom => new RatingReviews(dom));
+
+
+class RatingProduct {
+  constructor(dom) {
+    dom.innerHTML = '<div class="product-rating__box" style="width: 88px; height: 16px;"></div>';
+    this.div = dom.querySelector('div');
+    for(var i = 0; i < 5; i++)
+      this.div.innerHTML += `<div data-value="${i+1}">`;
+    this.render();
+  }
+
+  change(e) {
+    let value = e.target.dataset.value;
+    value && (this.svg.parentNode.dataset.value = value);
+    this.render();
+  }
+
+  render() {
+    this.div.querySelectorAll('div').forEach(star => {
+      let on = +this.div.parentNode.dataset.value >= +star.dataset.value;
+      star.classList.toggle('active', on);
+    });
+  }
+}
+
+document.querySelectorAll('.product-rating').forEach(dom => new RatingProduct(dom));
+
+
+class RatingProductCard {
+  constructor(dom) {
+    dom.innerHTML = '<div class="product-card-rating__box" style="width: 88px; height: 16px;"></div>';
+    this.div = dom.querySelector('div');
+    for(var i = 0; i < 5; i++)
+      this.div.innerHTML += `<div data-value="${i+1}">`;
+    this.render();
+  }
+
+  change(e) {
+    let value = e.target.dataset.value;
+    value && (this.svg.parentNode.dataset.value = value);
+    this.render();
+  }
+
+  render() {
+    this.div.querySelectorAll('div').forEach(star => {
+      let on = +this.div.parentNode.dataset.value >= +star.dataset.value;
+      star.classList.toggle('active', on);
+    });
+  }
+}
+
+document.querySelectorAll('.product-card-rating').forEach(dom => new RatingProductCard(dom));

@@ -47,6 +47,15 @@
   &__list{
     height: 100%;
     overflow-y: auto;
+    margin-right: -2px;
+    &::-webkit-scrollbar {
+      width: 2px;
+      /* высота для горизонтального скролла */
+      background-color: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $gold;
+    }
   }
   &__item{
     border-bottom: 0.1px solid #CDD0D9;

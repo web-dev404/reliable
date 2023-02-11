@@ -140,6 +140,11 @@
     color: $black4;
     margin-bottom: 16px;
   }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__price{
     display: flex;
   }
@@ -159,6 +164,20 @@
     text-decoration-line: line-through;
     img{
       margin-left: 1px;
+    }
+  }
+}
+
+.product-card-rating{
+  &__box{
+    div{
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-image: url('../img/icons/icons.svg#product-star-default');
+      &.active{
+        background-image: url('../img/icons/icons.svg#product-star-active');
+      }
     }
   }
 }

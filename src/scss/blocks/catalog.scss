@@ -600,6 +600,7 @@
       justify-content: flex-start;
       opacity: 0;
       visibility: hidden;
+      overflow-y: auto;
       transition: .3s;
       &.active{
         opacity: 1;
