@@ -113,14 +113,14 @@
         clip: rect(0 0 0 0);
         position: absolute;
         &:checked + .dropdown-menu__checkbox{
-          background-image: url('../../img/icons/icons.svg#filter-category-checked');
+          background-image: url('../img/icons/icons.svg#filter-category-checked');
         }
       }
       &__checkbox{
         display: block;
         width: 12px;
         height: 12px;
-        background-image: url('../../img/icons/icons.svg#filter-category-default');
+        background-image: url('../img/icons/icons.svg#filter-category-default');
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -160,7 +160,7 @@
           left: 0;
           right: 0;
           bottom: 0;
-          background-image: url('../../img/catalog/apply.jpg');
+          background-image: url('../img/catalog/apply.jpg');
           border-radius: 8px;
           opacity: 0;
           z-index: -1;
@@ -203,14 +203,14 @@
     clip: rect(0 0 0 0);
     position: absolute;
     &:checked + .catalog__section-checkbox{
-      background-image: url('../../img/icons/icons.svg#section-checked');
+      background-image: url('../img/icons/icons.svg#section-checked');
     }
   }
   &__section-checkbox{
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url('../../img/icons/icons.svg#section-default');
+    background-image: url('../img/icons/icons.svg#section-default');
     margin-right: 4px;
   }
   &__section-checkbox-text{
@@ -350,7 +350,7 @@
     clip: rect(0 0 0 0);
     position: absolute;
     &:checked + .catalog__favorites-checkbox{
-      background-image: url('../../img/icons/icons.svg#favorites-checked');
+      background-image: url('../img/icons/icons.svg#favorites-checked');
     }
   }
   &__favorites-checkbox{
@@ -358,7 +358,7 @@
     margin-left: auto;
     width: 16px;
     height: 16px;
-    background-image: url('../../img/icons/icons.svg#favorites-default');
+    background-image: url('../img/icons/icons.svg#favorites-default');
   }
   &__imgbox{
     padding: 0 38px;

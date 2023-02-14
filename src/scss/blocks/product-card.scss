@@ -46,7 +46,7 @@
       right: 0;
       width: 300px;
       height: 60px;
-      background-image: url('../../img/product-card/element-top.png');
+      background-image: url('../img/product-card/element-top.png');
       z-index: -1;
     }
   }
@@ -210,7 +210,7 @@
   &__buy-btn{
     display: flex;
     align-items: center;
-    background-image: url('../../img/product-card/btn-hover.jpg');
+    background-image: url('../img/product-card/btn-hover.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -344,7 +344,7 @@
       height: 548px;
       top: 0;
       right: 0;
-      background-image: url('../../img/product-card/img-bg.png');
+      background-image: url('../img/product-card/img-bg.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -372,13 +372,13 @@
     &::before{
       top: 52px;
       right: 0;
-      background-image: url('../../img/product-card/photo-before.png');
+      background-image: url('../img/product-card/photo-before.png');
     }
     &::after{
       bottom: 40px;
       left: 0;
       height: 64px;
-      background-image: url('../../img/product-card/photo-after.png');
+      background-image: url('../img/product-card/photo-after.png');
     }
   }
   &__photos-img{
@@ -399,7 +399,7 @@
       height: 548px;
       bottom: 0;
       right: 0;
-      background-image: url('../../img/product-card/img-bg.png');
+      background-image: url('../img/product-card/img-bg.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -445,7 +445,7 @@
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.15), inset 0px -2px 3px rgba(0, 0, 0, 0.15);
     filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
     border-radius: 15px;
-    background-image: url('../../img/product-card/btn-hover.jpg');
+    background-image: url('../img/product-card/btn-hover.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

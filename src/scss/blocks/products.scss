@@ -98,7 +98,7 @@
     clip: rect(0 0 0 0);
     position: absolute;
     &:checked + .swiper-products__favorites-checkbox{
-      background-image: url('../../img/icons/icons.svg#favorites-checked');
+      background-image: url('../img/icons/icons.svg#favorites-checked');
     }
   }
   &__favorites-checkbox{
@@ -106,7 +106,7 @@
     margin-left: auto;
     width: 16px;
     height: 16px;
-    background-image: url('../../img/icons/icons.svg#favorites-default');
+    background-image: url('../img/icons/icons.svg#favorites-default');
   }
   &__imgbox{
     width: 179px;

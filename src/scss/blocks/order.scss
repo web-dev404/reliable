@@ -58,7 +58,7 @@
 	.button-catalog::after {
 		position: absolute;
 		content: "";
-		background-image: url("../../img/arrow-left.svg");
+		background-image: url("../img/arrow-left.svg");
 		width: 12px;
 		height: 22px;
 		top: 21px;
@@ -103,12 +103,12 @@
 		top: 12px;
 	}
 	&__line-up::after {
-		background-image: url("../../img/line/sm-line.png");
+		background-image: url("../img/line/sm-line.png");
 		transform: rotate(180deg);
 		right: -102px;
 	}
 	&__line-up::before {
-		background-image: url("../../img/line/sm-line.png");
+		background-image: url("../img/line/sm-line.png");
 		left: -102px;
 	}
 
@@ -122,12 +122,12 @@
 	}
 
 	&__line-down::after {
-		background-image: url("../../img/line/big-line.png");
+		background-image: url("../img/line/big-line.png");
 		transform: rotate(180deg);
 		right: 0;
 	}
 	&__line-down::before {
-		background-image: url("../../img/line/big-line.png");
+		background-image: url("../img/line/big-line.png");
 		left: 0;
 	}
 
@@ -366,7 +366,7 @@
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 19px;
-		background: url("../../img/details/background.jpeg");
+		background: url("../img/details/background.jpeg");
 		background-size: cover;
 		filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.5));
 		border-radius: 8px;

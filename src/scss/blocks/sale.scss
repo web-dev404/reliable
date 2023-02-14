@@ -10,11 +10,11 @@
     top: 10px;
   }
   &::before{
-    background-image: url('../../img/sale/sale-line-top-before.jpg');
+    background-image: url('../img/sale/sale-line-top-before.jpg');
     left: 16px;
   }
   &::after{
-    background-image: url('../../img/sale/sale-line-top-after.jpg');
+    background-image: url('../img/sale/sale-line-top-after.jpg');
     right: 16px;
   }
   &__categories{
@@ -59,7 +59,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url('../../img/sale/sale-hover-link.jpg');
+      background-image: url('../img/sale/sale-hover-link.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -83,12 +83,12 @@
       z-index: -1;
     }
     &::before{
-      background-image: url('../../img/sale/sale-line-content-before.png');
+      background-image: url('../img/sale/sale-line-content-before.png');
       top: -10px;
       right: -53px;
     }
     &::after{
-      background-image: url('../../img/sale/sale-line-content-after.png');
+      background-image: url('../img/sale/sale-line-content-after.png');
       bottom: -10px;
       left: -53px;
       height: 64px;

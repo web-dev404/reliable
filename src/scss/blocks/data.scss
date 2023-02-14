@@ -17,11 +17,11 @@
 		}
 		&::before {
 			top: 30px;
-			background: url("../../img/data/top.png");
+			background: url("../img/data/top.png");
 		}
 		&::after {
 			z-index: -1;
-			background: url("../../img/data/bottom.png");
+			background: url("../img/data/bottom.png");
 			bottom: 60px;
 		}
 	}

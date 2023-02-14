@@ -76,7 +76,7 @@
     transform: scale(0.9);
     opacity: 0;
     background-color: #42403d;
-    background-image: url('../../img/bg.png');
+    background-image: url('../img/bg.png');
     padding: 20px;
     border-radius: 20px;
   }
@@ -289,7 +289,7 @@
     border: 1px solid $gold;
     border-radius: 8px;
     transition: .2s;
-    background-image: url('../../img/modal-card/modal-buy-btn.jpg');
+    background-image: url('../img/modal-card/modal-buy-btn.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

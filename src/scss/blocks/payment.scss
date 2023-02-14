@@ -1,5 +1,5 @@
 .background {
-	background-image: url("../../img/bg.png");
+	background-image: url("../img/bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -52,7 +52,7 @@
 	&__item-line-three::after {
 		position: absolute;
 		content: "";
-		background-image: url("..//../img/arrow-right.svg");
+		background-image: url("..//img/arrow-right.svg");
 		background-repeat: no-repeat;
 		width: 16px;
 		height: 12px;
@@ -116,7 +116,7 @@
 	&__price::after {
 		position: absolute;
 		content: "";
-		background-image: url("../../img/symbol.svg");
+		background-image: url("../img/symbol.svg");
 		width: 19px;
 		height: 24px;
 		top: 5px;
@@ -142,7 +142,7 @@
 	&__card::after {
 		position: absolute;
 		content: "";
-		background-image: url("../../img/icon-card.svg");
+		background-image: url("../img/icon-card.svg");
 		width: 18px;
 		height: 18px;
 		top: 8px;
@@ -151,7 +151,7 @@
 	&__card::before {
 		position: absolute;
 		content: "";
-		background-image: url("../../img/icon-debit.svg");
+		background-image: url("../img/icon-debit.svg");
 		width: 10px;
 		height: 10px;
 		top: 8px;
@@ -382,7 +382,7 @@
 	&__button::after {
 		position: absolute;
 		content: "";
-		background-image: url("../../img/symbol2.svg");
+		background-image: url("../img/symbol2.svg");
 		width: 10px;
 		height: 13px;
 		top: 24px;
@@ -400,7 +400,7 @@
 		content: "";
 		width: 18px;
 		height: 18px;
-		background-image: url("../../img/check.svg");
+		background-image: url("../img/check.svg");
 		background-repeat: no-repeat;
 		background-size: initial;
 		background-position: center;
@@ -409,7 +409,7 @@
 
 	&__support {
 		margin: 25px auto;
-		background-image: url("../../img/support.png");
+		background-image: url("../img/support.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
